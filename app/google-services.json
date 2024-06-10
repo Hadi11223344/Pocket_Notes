@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "570838958776",
+    "project_id": "pocket-notes-a3c7a",
+    "storage_bucket": "pocket-notes-a3c7a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570838958776:android:7ab17044b80612766d6a4d",
+        "android_client_info": {
+          "package_name": "com.example.pocketnotes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1TpYdDQxBlfxY15dPEDteKsPJqh0L_NI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
