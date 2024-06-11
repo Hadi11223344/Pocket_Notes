@@ -9,4 +9,8 @@
     <string name="create_account">Create Account</string>
     <string name="already_have_an_account">Already have an account?</string>
     <string name="login">Login</string>
+    <string name="login_btn">Login</string>
+    <string name="add_note_icon">Add Note Icon</string>
+    <string name="menu_icon">Menu Icon</string>
+    <string name="notes">Notes</string>
 </resources>

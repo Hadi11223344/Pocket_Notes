@@ -11,6 +11,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -23,8 +25,18 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        // we to check if user is already logged in or not if it is take it to main home activity
+        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                if (FirebaseAuth.getInstance().getCurrentUser() != null) {
+                    startActivity(new Intent(MainActivity.this, Home.class));
+                    finish();
+                }else {
+                    startActivity(new Intent(MainActivity.this, LoginAccount.class));
+                }
+            }
+        },5000);
 
-        new Handler(Looper.getMainLooper()).postDelayed(() -> startActivity(new Intent(MainActivity.this, CreateAccount.class)),5000);
-        finish();
     }
 }
